@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>RegExp Test</title>
-		<link rel="stylesheet" type="text/css" href="style.css">		
- 		<script>
- 			function RegExpTest(){
-				var str1 = '今天是2019-2-21，明天是2019-2-22';
-    		var pattern = /\d{4}-(0?[1-9]|10|11|12)-(0?[1-9]+|[12][0-9]|30|31)/gi;
-    		var str2 = str1.match(pattern)[0];
- 				var isoDate = new Date(str2);
-				document.getElementById('lbResult').innerHTML = isoDate.toISOString();
-			}
- 		</script>
-	</head>
-	<body>
-		<div class="divRegister">
-			<h2>练习题：</h2>
-			<div class="">	
-				使用 RegExp 从 “今天是2019-2-21，明天是2019-2-22” 获取 “2019-2-21“并且转化成 iso8601日期
-			</div>
-			<button class="btnSubmit" id="btnSubmit" onclick="RegExpTest()">Submit</button>
-			<label id="lbResult"></label>
-		</div>		
-	</body>	
+  <head>
+    <title>RegExp Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script>
+       function RegExpTest(){
+         var str1 = '今天是2019-2-21，明天是2019-2-22';
+         var pattern = /\d{4}-(0?[1-9]|10|11|12)-(0?[1-9]+|[12][0-9]|30|31)/gi;
+         var str2 = str1.match(pattern)[0];
+         var isoDate = new Date(str2);
+         document.getElementById('lbResult').innerHTML = isoDate.toISOString();
+      }
+     </script>
+  </head>
+  <body>
+    <div class="divRegister">
+      <h2>练习题：</h2>
+      <div class="">
+        使用 RegExp 从 “今天是2019-2-21，明天是2019-2-22” 获取 “2019-2-21“并且转化成 iso8601日期
+      </div>
+      <button class="btnSubmit" id="btnSubmit" onclick="RegExpTest()">Submit</button>
+      <label id="lbResult"></label>
+    </div>
+  </body>
 </html>
