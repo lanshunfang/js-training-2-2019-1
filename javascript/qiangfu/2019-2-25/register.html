@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+      <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+     <script>
+       $(function(){
+         $("#inputBirthday").datepicker();
+       });
+     </script>
+  </head>
+  <body>
+    <div class="divRegister">
+      <h1>EXAMPLE</h1>
+      <div class="divTitle">
+        Email address
+      </div>
+      <div class="divInput">
+        <input class="input" id="inputEmail" placeholder="  Email" type="text" onkeyup="validateEmail()" />
+      </div>
+      <div class="divTitle">
+        Birthday
+      </div>
+      <div class="divInput">
+        <input class="input" id="inputBirthday" placeholder="  Your birthday" type="text" />
+      </div>
+      <div class="divTitle">
+        Password
+      </div>
+      <div class="divInput">
+        <input class="input" id="inputPassword" placeholder="  Password" type="password"/>
+      </div>
+      <div class="divTitle">
+        File input
+      </div>
+      <div class="divInput">        
+        <input class="inputFile" id="inputFile" type="file" onchange="imagePreview(this)"/>
+        <div id="divImage" style="display:none;">
+          <img id="imgPreview"></img>
+        </div>
+      </div>
+      <label>Example block-level help text here.</label>
+      <div class="divCheck">
+        <input id="inputCheckMeOut" type="checkbox" value="Checked"/>
+        Check me out
+      </div>
+      <button class="btnSubmit" id="btnPreview" onclick="previewOrEdit()">预览</button>
+      <button class="btnSubmit" id="btnSubmit" onclick="submitRegister()">Submit</button>
+      <label id="errorLabel"></label>
+    </div>    
+  </body>
+</html>

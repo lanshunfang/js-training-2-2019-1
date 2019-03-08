@@ -1,0 +1,88 @@
+h1{
+	color: #959595;
+	text-align:left;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 13px;
+	
+}
+
+label{
+	color: #747474;
+	font-size: 15px;
+
+}
+
+.divRegister{
+	text-align: left;	
+	padding-bottom:10px;
+	margin-left: 2px;
+	border-radius:3px;
+	border:1px #ccc solid;	
+	padding-left: 15px;
+	width: 830px;
+}
+
+.divTitle{	
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 15px;
+}
+
+.divCheck{
+	margin-top: 20px;
+	text-align: left;
+	font-size: 15px;
+}
+
+.input{
+	width: 815px;
+	height: 34px;
+	border-radius: 3px;
+	border: 1px #ccc solid;
+	margin-top: 10px;
+	color: #333;
+}
+
+input::-webkit-file-upload-button{
+	background: white;
+	border-radius:3px;
+	border:1px #ccc solid;
+	height: 18px;
+	width: 76px;
+	font-size: 11px;
+}
+
+#imgPreview{
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
+}
+
+#inputCheckMeOut{
+	width: 15px;
+}
+
+
+.btnSubmit{
+	color: black;
+	background: white;
+	border:1px #ccc solid;
+	border-radius:3px;
+	width: 70px;
+	height: 34px;	
+	margin-top: 15px;
+	
+}
+
+.btnSubmit:hover{
+	background: #ccc;	
+}
+
+#errorLabel{
+	color: red;
+}
