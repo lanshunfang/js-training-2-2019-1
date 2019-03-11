@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2019-02-25 homework</title>
+</head>
+<body>
+    <h1>RegExp / jQuery date-picker #1</h1>
+    <hr>
+    <h3>使用 RegExp 从 “今天是2019-2-21，明天是2019-2-22” 获取 “2019-2-21“并且转化成 iso8601日期</h3>
+    <button onclick="func()">转换</button>
+    <br>
+    <h3 id="demo"></h3>
+    <script>
+        let func = () => {
+            let str = "今天是2019-2-21，明天是2019-2-22” 获取 “2019-2-21";
+            let patt = /2019-2-21/;
+            let result = new Date(str.match(patt));
+            let isoDate = result.toISOString();
+            document.getElementById('demo').innerHTML = isoDate;
+        }
+    </script>
+</body>
+</html>
