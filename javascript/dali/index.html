@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODOMVC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./bootstrap-v4.3.1-min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <p></p>
+        <div class="input-group mb-3">
+            <input type="text" id="addItem" class="form-control" placeholder="What need to be done?" aria-label="What need to be done?"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" id="addBtn" type="button">Add</button>
+            </div>
+        </div>
+        <div class="alert alert-success" role="alert">
+            # Tips: Double click the item below will fade out it!
+        </div>
+        <ul class="list-group list-group-flush" id="toDoList">
+            <li class="list-group-item">Hiking</li>
+            <li class="list-group-item">shopping</li>
+            <li class="list-group-item">buy milk</li>
+        </ul>
+    </div>
+
+    <script src="./jquery-v3.3.1-min.js"></script>
+    <script src="./bootstrap-v4.3.1-min.js"></script>
+    <script src="./popper-v1.14.7-min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
