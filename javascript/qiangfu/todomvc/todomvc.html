@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TODO MVC by jQuery</title>
+  <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="todomvc">
+    <h1>todos</h1>
+    <div class="todocontent">
+      <div class="inputzone">
+        <form>
+          <input style="display:none"></input>
+          <input id="input_todo" type="text" placeholder="What needs to be done?" autofocus></input>
+        </form>
+      </div>
+      <div class="todolist">
+        <ul id="ul_todolist"></ul>
+      </div>
+      <div class="summaryzone">
+        <label id="todo_count">items left</label>
+        <label id="todo_all">All</label>
+        <label id="todo_active">Active</label>
+        <label id="todo_completed">Completed</label>
+      </div>
+    </div>
+  </div>
+  <script src="todomvc.js"></script>
+</body>
+
+</html>

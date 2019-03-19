@@ -46,6 +46,7 @@ label{
 	border: 1px #ccc solid;
 	margin-top: 10px;
 	color: #333;
+	padding-left: 10px;
 }
 
 input::-webkit-file-upload-button{

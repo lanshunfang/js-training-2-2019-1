@@ -1,0 +1,114 @@
+body {
+  background: #f5f5f5;
+  max-width: 250px;
+  min-width: 530px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: rgba(175, 47, 47, 0.15);
+  text-align: center;
+  font-size: 100px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.todocontent {
+  padding-left: 20px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1)
+}
+
+.inputzone input {
+  border: none;
+  text-align: left;
+  font-size: 30px;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.inputzone input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.todolist ul {
+  margin-top: 0px;
+  padding-left: 0px;
+  border-top: 1px solid #ededed;
+}
+
+.todolist li {
+  font-size: 30px;
+  background-color: white;
+  border-bottom: 1px solid #ededed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  list-style-type: none;
+  box-shadow: #d8d8d8 7px 7px 18px 0px;
+  transition: all .5s cubic-bezier(0, 1, 0.5, 1);
+  transform: translateY(0);
+}
+
+.todolist label {
+  padding-left: 20px;
+}
+
+#ID {
+  display: none;
+}
+
+.labelDeletedTodo {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+i {
+  font-size: 32px;
+}
+
+.iUnCompleted {
+  color: #ddd;
+}
+
+.iCompleted {
+  color: #96df72;
+}
+
+.ideleteTodo {
+  color: salmon;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.summaryzone {
+  background-color: white;
+  border: #c1c1c1 solid 1px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 0px;
+  box-shadow: #d8d8d8 7px 7px 18px 0px;
+  color: #777;
+  display: none;
+}
+
+.summaryzone label {
+  padding-right: 20px;
+}
+
+.summaryzone label .labelselected {
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  padding-left: 20px;
+}
