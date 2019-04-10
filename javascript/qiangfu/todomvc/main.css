@@ -50,7 +50,6 @@ h1 {
   padding-bottom: 10px;
   width: 100%;
   list-style-type: none;
-  box-shadow: #d8d8d8 7px 7px 18px 0px;
   transition: all .5s cubic-bezier(0, 1, 0.5, 1);
   transform: translateY(0);
 }
@@ -59,7 +58,7 @@ h1 {
   padding-left: 20px;
 }
 
-#ID {
+#TodoItemID {
   display: none;
 }
 
@@ -91,24 +90,30 @@ i {
 }
 
 .summaryzone {
-  background-color: white;
-  border: #c1c1c1 solid 1px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
   margin-top: 0px;
-  box-shadow: #d8d8d8 7px 7px 18px 0px;
+  padding-left: 0px;
+  padding-bottom: 20px;
   color: #777;
-  display: none;
+  font-size: 14px;
 }
 
 .summaryzone label {
   padding-right: 20px;
 }
 
-.summaryzone label .labelselected {
-  border: #ccc solid 1px;
+.summaryzone a {
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
   border-radius: 3px;
-  padding-left: 20px;
+}
+
+.summaryzone a.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+.summaryzone a:hover {
+  cursor: pointer;
+  border-color: rgba(175, 47, 47, 0.1)
 }

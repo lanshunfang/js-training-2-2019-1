@@ -17,6 +17,7 @@
         <form>
           <input style="display:none"></input>
           <input id="input_todo" type="text" placeholder="What needs to be done?" autofocus></input>
+          <button type="submit" style="display:none" />
         </form>
       </div>
       <div class="todolist">
@@ -24,9 +25,9 @@
       </div>
       <div class="summaryzone">
         <label id="todo_count">items left</label>
-        <label id="todo_all">All</label>
-        <label id="todo_active">Active</label>
-        <label id="todo_completed">Completed</label>
+        <a class="selected" id="all">All</a>
+        <a id="active">Active</a>
+        <a id="completed">Completed</a>
       </div>
     </div>
   </div>
