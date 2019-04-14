@@ -12,22 +12,22 @@
 <body>
   <div class="todomvc">
     <h1>todos</h1>
-    <div class="todocontent">
-      <div class="inputzone">
+    <div class="todo-content">
+      <div class="input-zone">
         <form>
-          <input style="display:none"></input>
+          <input class="input-hide"></input>
           <input id="input_todo" type="text" placeholder="What needs to be done?" autofocus></input>
-          <button type="submit" style="display:none" />
+          <button type="submit" class="input-hide" />
         </form>
       </div>
-      <div class="todolist">
+      <div class="todo-list">
         <ul id="ul_todolist"></ul>
       </div>
-      <div class="summaryzone">
+      <div class="summary-zone">
         <label id="todo_count">items left</label>
-        <a class="selected" id="all">All</a>
-        <a id="active">Active</a>
-        <a id="completed">Completed</a>
+        <a class="linkbutton selected" id="all">All</a>
+        <a class="linkbutton" id="active">Active</a>
+        <a class="linkbutton" id="completed">Completed</a>
       </div>
     </div>
   </div>
